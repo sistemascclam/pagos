@@ -1,0 +1,246 @@
+
+$primary: #1279EE;
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f9;
+}
+
+.visual-picker-container{
+  background-color: white;
+  border-radius: .8rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  text-align: left;
+  display: flex;
+  user-select: none;
+  cursor: pointer;
+}
+
+.visual-picker-container:hover{
+  transform: scale(1.02);
+}
+
+.visual-picker-container img{
+  width: 50px;
+}
+
+.visual-picker-container span{
+  font-weight: 500;
+  margin: auto 0 auto 1rem;
+}
+
+.visual-picker-container i{
+  margin: auto 1rem auto auto;
+}
+
+.animate__delay-min{
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.animate__delay-1-5s{
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+.animate__delay-05{
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.back-button{
+  user-select: none;
+  cursor: pointer;
+}
+
+.step-number{
+  background-color: #BFBFBF;
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+  user-select: none;
+}
+
+.step-current{
+  border: .2rem solid white;
+  border-radius: 100%;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.step-divider{
+  background-color: #BFBFBF;
+  height: 0.25rem;
+  width: 4.5rem;
+  margin: auto .5rem;
+}
+
+.step-passed{
+  background-color: $primary;
+}
+
+.question-title{
+  font-weight: 700;
+}
+
+.label-control-input{
+  font-weight: 700;
+}
+
+.success-animation{
+  width:100px;
+  height:100px;
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  0% {
+    width:200px;
+    height:200px;
+  }
+  50% {
+    width:200px;
+    height:200px;
+  }
+  100% {
+    width:100px;
+    height:100px;
+  }
+}
+
+/*ESTILOS FORMULARIO PAGO*/
+
+#myPaymentForm{
+  width: fit-content;
+  margin: auto;
+}
+
+.kr-installment-number{
+  display: none !important;
+}
+
+.kr-first-installment-delay{
+  display: none !important;
+}
+
+.kr-embedded input,span{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.kr-embedded .kr-pan,.kr-expiry,.kr-security-code{
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+.kr-embedded .kr-payment-button{
+  background-color:#1279ee !important;    border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+.kr-embedded .kr-payment-button:hover{
+  background-color: #368df1 !important;
+  border-color: #2a86f0 !important;
+}
+
+.kr-embedded .kr-form-error{
+  background-color: #ee1212d6 !important;
+  border-radius: 1rem;
+}
+/*ESTILOS FORMULARIO PAGO*/
+
+.captcha-container{
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 0 0;
+}
+
+.nav-container div{
+  margin-right: 2rem;
+  text-align: right;
+  color: #21ca82;
+  margin-top: 2rem;
+}
+
+.text-nav{
+  font-weight: 600;
+  margin-left: .5rem;
+  font-size: .8rem;
+  display: inline-block;
+}
+
+.logo{
+  width: 13rem;
+}
+
+@media (max-width: 400px) {
+  .nav-container div{
+    margin-right: 1rem;
+    width: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .logo{
+    width: 9rem;
+  }
+
+  .text-nav{
+    font-size: .7rem;
+  }
+
+  .step-divider{
+    width: 2.5rem !important;
+  }
+
+  .step-number{
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+
+  .step-current{
+    width: 1.8rem !important;
+    height: 1.8rem !important;
+  }
+}
+
+.tarjetas{
+  display: flex;
+  justify-content: center;
+}
+
+.tarjetas img{
+  width: 20%;
+}
